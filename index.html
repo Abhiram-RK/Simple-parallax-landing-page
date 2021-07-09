@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,54 @@
     <title>Landing Screen</title>
     <link rel="Stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-            <a href="#">Home</a>
-           <a href="#">About</a>
-        <a href="#">Contact</a>
+        <div class="container">
+            <a href="#">Logo</a>
+            <nav>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Resource</a>
+                <a href="">Location</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h1>Explore the World</h1>
-    </main>
-    <main>
-        <h1>Explore the Universe</h1>
+        <section class="banner-container">
+            <div class="container">
+            <div class="left-section">
+                <h1>Welcome to ARK CREATIONS</h1>
+                <p>Every great design begins with an even better story. <br>
+                    Design is not just what it looks likes Design is how it works.</p>
+                <button>Get Started</button>
+            </div>
+            <div class="right-section">
+                <h5>Fill the form</h5>
+                <form action="" autocomplete="off">
+                    <div class="input-group">
+                        <input type="text" id="name" required>
+                        <label for="name" >Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required>
+                        <label for="email" >Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" required>
+                        <label for="password" >Password</label>
+                    </div>
+                    <div class="submit-section">
+                        <input type="submit" class="submit-button">
+                    </div>
+                </form>
+            </div>
+        </div>
+        </section>
     </main>
 
 </body>
+
 </html>

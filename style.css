@@ -1,45 +1,158 @@
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
+    padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
 }
 
+/* header section */
 header{
-    position: absolute;
-    top: 15px;
-    text-align: right;
     width: 100%;
-    
-
+    padding: 20px;
+    background-color: rgba(23,23,23,.5);
+    position: absolute;
+    top: 0;
 }
+header .container{
+   display: flex;
+   justify-content: space-between;
+}
+
 header a{
-    color: rgb(0, 0, 0);
     text-decoration: none;
-    margin-right: 50px;
-    font-family: 'Verdana';
+    color: rgb(146, 146, 146);
+    margin-right: 70px;
+    letter-spacing: 1.5px;
     font-size: 15px;
-    transition: .5s ease-in-out;
+    
 }
 header a:hover{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
+    transition: .5s ease-in-out;
 }
+/* header end */
 
-main{
-    background-image: url("p2.jpg");
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
+
+/* banner section */
+.banner-container{
+    background: linear-gradient(rgba(23,23,23,.5),rgba(63,63,63,.5)),url("p2.jpg") ;
     background-repeat: no-repeat;
-    display: flex;
+    background-size: cover;
     background-attachment: fixed;
-    justify-content: center;
-    align-items: center;
-}
-
-main h1{
+    height: 100vh;
     margin: 0;
-    font-size: 60px;
-    mix-blend-mode:overlay;
-    color: white;
-
+    display: flex;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: space-around;
 }
+.banner-container .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+/* banner end */
+
+
+/* left-section */
+.left-section{
+    width: 500px;
+    align-self: center;
+}
+.left-section h1{
+    margin: 0;
+    color: white;
+}
+.left-section p{
+    color: rgba(255,255,255,.8);
+    font-size: 14;
+    letter-spacing: 2;
+    line-height: 5px;
+    line-height: 25px;
+}
+/* left-section end */
+
+/* left-section button */
+.left-section button{
+    background-color: white;
+    color: teal;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.left-section button:hover{
+    background-color: rgba(23,23,23,.5);
+    color: white;
+    transition: .7s ease-in-out;
+}
+/* left-section button end */
+
+/* form-section */
+.right-section{
+    width: 350px;
+    background-color: white;
+    padding: 30px 0;
+    border-radius: 7px;
+}
+.right-section h5{
+    margin: 0;
+    padding-bottom: 10px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+.input-group{
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.input-group label{
+    color: rgb(146, 146, 146);
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+}
+.input-group input{
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(23,23,23,.11);
+}
+.input-group input:focus ~ label,
+   .input-group input:valid ~ label{
+      color: teal;
+      top: -10px;
+}
+.submit-section{
+    text-align: center;
+}
+.submit-button{
+    width: 250px;
+    background-color: teal;
+    border: none;
+    height: 30px;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.submit-button:hover{
+    border: solid 1px;
+    border-color: teal;
+    color: teal;
+    background-color: transparent;
+    transition: .7s ease-in-out;
+}
+/* form-section end */

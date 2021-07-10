@@ -16,6 +16,7 @@ header{
     background-color: rgba(23,23,23,.5);
     position: absolute;
     top: 0;
+    padding-left: 100px;
 }
 header .container{
    display: flex;
@@ -156,3 +157,76 @@ header a:hover{
     transition: .7s ease-in-out;
 }
 /* form-section end */
+
+
+/* section 2 */
+.section-2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 75vh;
+    align-items: center;
+    
+}
+.card-container{
+    width: 300px;
+    height: 370px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 3px 3px 17px rgba(131, 130, 130, 0.452);
+    overflow: hidden;
+}
+.card-container h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    font-size: 20px;
+}
+.image-container{
+    width: 100%;
+    overflow: hidden;
+}
+.image-container img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: .5s ease-in-out;
+}
+.image-container img:hover{
+    transform: scale(1.1);
+}
+/* section 2 end */
+
+/* heading mentor */
+.heading-mentor{
+    padding-top: 10px;
+    text-align: center;
+}
+.heading h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: teal;
+}
+/* heading mentor end */
+
+/* linkedin icon */
+.fa-linkedin-square{
+    color: rgb(4, 66, 136);
+    font-size: 23px;
+}
+i:hover {
+    color: gray;
+    transition: .5s ease-in-out;
+}
+/* linkedin icon end */
+
+/* footer */
+footer{
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+.copy-right{
+    text-decoration: none;
+    color: teal;
+    font-weight: bold;
+}
+/* footer end */

@@ -18,6 +18,9 @@ header{
     top: 0;
     padding-left: 100px;
 }
+.container img{
+    width: 30px;
+}
 header .container{
    display: flex;
    justify-content: space-between;
